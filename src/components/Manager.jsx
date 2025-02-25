@@ -102,12 +102,22 @@ const Manager = () => {
                 value={form.password}
                 onChange={handleChange}
                 placeholder="Enter Password"
-                className="rounded-full border border-green-500 w-full p-3 text-sm sm:text-base"
+                className="rounded-full border border-green-500 w-full p-4 py-1"
                 type="password"
                 name="password"
+                 id="password"
               />
-              <span className="absolute right-3 top-3 cursor-pointer" onClick={showPassword}>
-                <img ref={ref} className="w-6 sm:w-7" src="icons/eye.png" alt="eye" />
+               <span
+                className="absolute right-[3px] top-[4px] cursor-pointer"
+                onClick={showPassword}
+              >
+                <img
+                  ref={ref}
+                  className="p-1"
+                  width={26}
+                  src="icons/eye.png"
+                  alt="eye"
+                />
               </span>
             </div>
           </div>
@@ -124,7 +134,7 @@ const Manager = () => {
 
         {/* Password Table Section */}
         <div className="passwords">
-          <h2 className="font-bold text-xl sm:text-2xl py-4 text-white">Your Passwords</h2>
+          <h2 className="font-bold text-xl sm:text-2xl py-4  text-white text-center">Your Passwords</h2>
 
           {/* Responsive Table */}
           <div className="overflow-x-auto">
